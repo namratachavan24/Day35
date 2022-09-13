@@ -12,7 +12,6 @@ namespace LINQProductReview
         {
             List<ProductReview> list = new List<ProductReview>();
             AddProductReviewIntoList(list);
-
         }
         public static void IterateOverProductReview(List<ProductReview> list)
         {
