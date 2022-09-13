@@ -8,10 +8,16 @@ namespace LINQProductReview
 {
     public class Program
     {
-        public static void Main(string[] args)
+       public static void Main(string[] args)
         {
-            List<ProductReview> list = new List<ProductReview>();
+            List<ProductReview> list = new List<ProductReview>();//list maintain the same order
             AddProductReviewIntoList(list);
+            ProductReviewManagement.RetriveTo3ReviewBasedOnTheHighestRating(list);
+            ProductReviewManagement.RetriveBasedOnProductIdAndRatig(list);
+            ProductReviewManagement.CountEachProductID(list);
+            ProductReviewManagement.RetriveProductIDAndRevies(list);
+            ProductReviewManagement.SkipTop5DataRetriveRemaining(list);
+            Console.ReadLine();
 
         }
         public static void IterateOverProductReview(List<ProductReview> list)
