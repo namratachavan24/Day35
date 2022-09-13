@@ -16,8 +16,6 @@ namespace LINQProductReview
             Console.WriteLine("\nRetriveint To 3Review Based On The Highest Rating");
             List<ProductReview> top4res = sortedList.Take(3).ToList();
             Program.IterateOverProductReview(top4res);
-
-
         }
         //UC3
         public static void RetriveBasedOnProductIdAndRatig(List<ProductReview> list)
